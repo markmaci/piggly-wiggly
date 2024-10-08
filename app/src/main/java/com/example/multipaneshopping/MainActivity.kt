@@ -44,14 +44,14 @@ val products = listOf(
     Product("Pasta Penne", "$1.49", "Italian penne pasta.", R.drawable.pasta_penne),
     Product("Ground Beef", "$4.99/lb", "Lean ground beef.", R.drawable.ground_beef),
     Product("Milk", "$2.49", "Fresh whole milk.", R.drawable.milk),
-//    Product("Eggs", "$1.99", "A dozen large eggs.", R.drawable.eggs),
-//    Product("Cheddar Cheese", "$3.49", "Sharp cheddar cheese.", R.drawable.cheddar_cheese),
-//    Product("Orange Juice", "$3.29", "100% pure orange juice.", R.drawable.orange_juice),
-//    Product("Cereal", "$2.99", "Crunchy oat cereal.", R.drawable.cereal),
-//    Product("Bread", "$1.99", "Whole grain bread.", R.drawable.bread),
-//    Product("Butter", "$2.49", "Creamy unsalted butter.", R.drawable.butter),
-//    Product("Yogurt", "$0.99", "Strawberry flavored yogurt.", R.drawable.yogurt),
-//    Product("Coffee", "$4.99", "Ground Arabica coffee.", R.drawable.coffee)
+    Product("Eggs", "$1.99", "A dozen large eggs.", R.drawable.eggs),
+    Product("Cheddar Cheese", "$3.49", "Sharp cheddar cheese.", R.drawable.cheddar_cheese),
+    Product("Orange Juice", "$3.29", "100% pure orange juice.", R.drawable.orange_juice),
+    Product("Cereal", "$2.99", "Crunchy oat cereal.", R.drawable.cereal),
+    Product("Bread", "$1.99", "Whole grain bread.", R.drawable.bread),
+    Product("Butter", "$2.49", "Creamy unsalted butter.", R.drawable.butter),
+    Product("Yogurt", "$0.99", "Strawberry flavored yogurt.", R.drawable.yogurt),
+    Product("Coffee", "$4.99", "Ground Arabica coffee.", R.drawable.coffee)
 )
 
 class MainActivity : ComponentActivity() {
@@ -174,8 +174,8 @@ fun ProductGrid(
     modifier: Modifier = Modifier
 ) {
     val columns = when {
-        LocalConfiguration.current.screenWidthDp < 600 -> 2
-        else -> 3
+        LocalConfiguration.current.screenWidthDp < 600 -> 3
+        else -> 4
     }
 
     LazyVerticalGrid(
